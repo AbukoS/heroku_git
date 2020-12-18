@@ -1,4 +1,4 @@
-import { Heading, Box, Image, Flex } from "@chakra-ui/react";
+import { Heading, Box, Image, Flex, Divider } from "@chakra-ui/react";
 import Slider from "react-slick";
 import { productsListUrl } from "../utils/constants";
 
@@ -16,6 +16,8 @@ function Home({ items }) {
 
   return (
     <Box w="100vw">
+      <Heading>Simple Ecom Auto deploy site</Heading>
+      <Divider />
       <Slider {...settings}>
         {items?.map((item) => (
           <Box key={item.id} w="300px" h="300px">
